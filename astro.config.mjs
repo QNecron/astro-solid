@@ -7,5 +7,8 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   integrations: [solidJs()],
-  adapter: netlify()
+  adapter: netlify(),
+  build: {
+      inlineStylesheets: 'always'
+  }
 });
