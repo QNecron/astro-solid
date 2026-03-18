@@ -1,0 +1,13 @@
+---
+import Page from '../components/Page.astro';
+import Character from '../components/Creator.tsx';
+
+const meta = {
+  title: "Character Creator | Astro + Solid",
+  description: "This is a meta description for SEO."
+}
+---
+<Page title={meta.title} description={meta.description}>
+  <h1>Character Creator</h1>
+  <Character client:only="solid-js" />
+</Page>

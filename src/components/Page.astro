@@ -7,6 +7,8 @@ interface Props {
 }
 
 const Props = Astro.props;
+
+import Header from '../components/Header.astro';
 ---
 <html lang="en">
 	<head>
@@ -19,7 +21,7 @@ const Props = Astro.props;
 		<meta name="description" content={Props.description} />
 	</head>
 	<body>
-	  <!-- header -->
+		<Header />
 	  <main id="main" class="main" role="main">
 			<slot />
 		</main>
