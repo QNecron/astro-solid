@@ -1,6 +1,12 @@
 :root {
-  --color-black: #111;
-  --color-white: #eee;
+  --color-black: #334;
+  --color-white: #ccf;
+
+  --body-font-family: sans-serif;
+  --body-font-weight: 400;
+
+  --size-16: 1rem;
+  --size-32: 2rem;
 }
 
 * {
@@ -12,5 +18,8 @@
 body {
   background: var(--color-black);
   color: var(--color-white);
-  font-size: 16px;
+  font-family: var(--body-font-family);
+  font-size: 16px; /* REM baseline */
+  font-weight: var(--body-font-weight);
+  padding: var(--size-32);
 }

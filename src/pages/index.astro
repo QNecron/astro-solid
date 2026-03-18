@@ -1,6 +1,11 @@
 ---
 import Page from '../components/Page.astro';
+
+const meta = {
+  title: "Page Title | Astro + Solid",
+  description: "This is a meta description for SEO."
+}
 ---
-<Page title="Astro + Solid" description="Something new!">
+<Page title={meta.title} description={meta.description}>
   <h1>Astro + Solid</h1>
 </Page>

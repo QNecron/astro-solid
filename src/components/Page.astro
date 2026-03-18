@@ -19,6 +19,10 @@ const Props = Astro.props;
 		<meta name="description" content={Props.description} />
 	</head>
 	<body>
-		<slot />
+	  <!-- header -->
+	  <main id="main" class="main" role="main">
+			<slot />
+		</main>
+		<!-- footer -->
 	</body>
 </html>
