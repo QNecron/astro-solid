@@ -6,6 +6,8 @@ export default function Creator() {
     ancestry: "Dwarf"
   });
 
+  const races = ["Dwarf", "Human"];
+
   return (
     <>
       <p>Name: {getCharacter.name} the {getCharacter.ancestry}</p>
@@ -22,14 +24,14 @@ export default function Creator() {
       </div>
 
       <div class="input">
-        <label for="ancestry">Name</label>
-        <input
+        <label for="ancestry">Ancestry</label>
+        <select
           id="ancestry"
-          type="text"
           value={getCharacter.ancestry}
-          autocomplete="off"
           onInput={(e) => setCharacter("ancestry", e.currentTarget.value)}
-        />
+        >
+          {races.map((data) => <option value={data}>{data}</option>)}
+        </select>
       </div>
     </>
   );
