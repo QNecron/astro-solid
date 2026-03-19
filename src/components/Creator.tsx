@@ -1,5 +1,7 @@
 import { createStore } from 'solid-js/store';
 
+import Input from './Input';
+
 export default function Creator() {
   const [getCharacter, setCharacter] = createStore({
     name: "Gimli",
@@ -12,16 +14,13 @@ export default function Creator() {
     <>
       <p>Name: {getCharacter.name} the {getCharacter.ancestry}</p>
 
-      <div class="input">
-        <label for="name">Name</label>
-        <input
-          id="name"
-          type="text"
-          value={getCharacter.name}
-          autocomplete="off"
-          onInput={(e) => setCharacter("name", e.currentTarget.value)}
-        />
-      </div>
+      <Input
+        type="text"
+        id="name"
+        name="Name"
+        value={getCharacter.name}
+        inputEvent={(e) => setCharacter("name", e.currentTarget.value)}
+      />
 
       <div class="input">
         <label for="ancestry">Ancestry</label>
