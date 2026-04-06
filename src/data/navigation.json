@@ -1,10 +1,34 @@
 [
   {
-    "name": "Home",
-    "url": "/"
+    "name": "Introduction",
+    "url": "/#introduction"
   },
   {
-    "name": "Creator",
-    "url": "/creator"
+    "name": "Experience",
+    "url": "/#experience"
+  },
+  {
+    "name": "Philosophy",
+    "url": "/#philosophy"
+  },
+  {
+    "name": "Specialization",
+    "url": "/#specialization"
+  },
+  {
+    "name": "Resume",
+    "url": "/#resume"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/QNecron/",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/jacob-broadaway/",
+    "target": "_blank",
+    "rel": "noopener noreferrer"
   }
 ]

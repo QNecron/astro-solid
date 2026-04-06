@@ -1,11 +1,34 @@
 ---
 import Page from '../components/Page.astro';
+import Section from '../components/Section.astro';
+
+import Content from '../data/home.json';
 
 const meta = {
-  title: "Page Title | Astro + Solid",
-  description: "This is a meta description for SEO."
+  title: "Front End Engineer / Architect | Jacob Broadaway",
+  description: "Jacob Broadaway: Front End Engineer/Architect with 20+ years of experience, and 12+ years of experience in e-commerce, ranging from small businesses to enterprise solutions."
 }
 ---
 <Page title={meta.title} description={meta.description}>
-  <h1>Astro + Solid</h1>
+
+  {Content.map((data) =>
+
+    <>
+    {(data.component === "section") &&
+      <Section 
+        id={data.id} 
+        heading={data.heading} 
+        paragraph={data.paragraph} 
+        cta_1_copy={data.cta_1_copy}
+        cta_1_url={data.cta_1_url}
+        cta_2_copy={data.cta_2_copy}
+        cta_2_url={data.cta_2_url}
+        cta_3_copy={data.cta_3_copy}
+        cta_3_url={data.cta_3_url}
+      />
+    }
+    </>
+
+  )}
+
 </Page>

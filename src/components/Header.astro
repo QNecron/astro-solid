@@ -2,17 +2,28 @@
 import Navigation from '../data/navigation.json';
 ---
 <header id="header" class="header" role="banner">
+
   <div wrapper="structure">
+
     <nav role="navigation">
+
       <ul class="navigation">
         {Navigation.map((data) =>
           <li class="navigation__item">
-            <a href={data.url} class="navigation__link">
+            <a 
+              href={data.url} 
+              target={data.target} 
+              rel={data.rel} 
+              class="navigation__link"
+            >
               {data.name}
             </a>
           </li>
         )}
       </ul>
+
     </nav>
+
   </div>
+
 </header>

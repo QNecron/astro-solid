@@ -1,0 +1,38 @@
+---
+const { 
+  id, 
+  theme, 
+  wrapper = "structure",
+  heading,
+  paragraph,
+  cta_1_copy,
+  cta_1_url,
+  cta_2_copy,
+  cta_2_url,
+  cta_3_copy,
+  cta_3_url
+} = Astro.props;
+---
+<section id={id} class="section" theme={theme}>
+
+  <div wrapper={wrapper}>
+
+    <div class="section__content">
+
+      {heading && <h2 class="section__title" heading="3">{heading}</h2>}
+
+      {paragraph && <p class="section__copy">{paragraph}</p>}
+
+      {cta_1_url &&
+        <div class="section__ctas">
+          <a href={cta_1_url} class="" target="_blank" rel="noopener noreferrer">{cta_1_copy}</a>
+          <a href={cta_2_url} class="" target="_blank" rel="noopener noreferrer">{cta_2_copy}</a>
+          <a href={cta_3_url} class="" target="_blank" rel="noopener noreferrer">{cta_3_copy}</a>
+        </div>
+      }
+
+    </div>
+
+  </div>
+
+</section>

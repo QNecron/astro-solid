@@ -1,0 +1,32 @@
+[
+  {
+    "component": "section",
+    "id": "experience",
+    "heading": "Experience",
+    "paragraph": "20+ years of development experience focusing on creating engaging user experiences on the web. 12+ years at the enterprise level. Highly skilled in the use of HTML, CSS, and JavaScript to develop modern, accessible, and performant websites. 7+ years with React and Node experience, which includes several frameworks like GatsbyJS, Next, and Remix."
+  },
+  {
+    "component": "section",
+    "id": "philosophy",
+    "heading": "Philosophy",
+    "paragraph": "No matter the stack, the fundamentals of develop should still apply. Be it a React, Svelt, or Vue project I work to ensure proper accessibility in accordance with WCAG 2.x guidelines, proper performance metrics for SEO and user experience, and clean scalable code to be reused as needed."
+  },
+  {
+    "component": "section",
+    "id": "specialization",
+    "heading": "Specialization",
+    "paragraph": "Front end user interface development in which I work hand in hand with designers to create what they have envisioned while maintaining clean, efficient and modern coding techniques. I've worked on several Design systems following Atomic Design, by Brad Frost, with the use of UX tools like Figma and Xd."
+  },
+  {
+    "component": "section",
+    "id": "resume",
+    "heading": "Resume",
+    "paragraph": "My resume (Google Doc), GitHub, and LinkedIn can be found below. My experience ranges from hands-on coding, SaaS integrations, architecture, leadership and mentoring. I've shortened my resume so as to make it easier to consume, so don't let it fool you as I always have a personal or side project to help expand my skill set or home in on something specific.",
+    "cta_1_copy": "Resume",
+    "cta_1_url": "https://docs.google.com/document/d/1odjVAq2si2wnDQAuWAyBEEKAmthlAhrLJRvxrSiOXlM/edit?usp=drive_link",
+    "cta_2_copy": "GitHub",
+    "cta_2_url": "https://github.com/QNecron/",
+    "cta_3_copy": "LinkedIn",
+    "cta_3_url": "https://www.linkedin.com/in/jacob-broadaway/"    
+  }
+]
